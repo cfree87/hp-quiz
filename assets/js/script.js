@@ -1,91 +1,76 @@
-
-const quizContainer = document.getElementById('quiz');
-const resultsContainer = document.getElementById('results');
-const submitButton = document.getElementById('submit');
-
-function buildQuiz(){
-    const output = [];
-  
-    // for each question...
-    myQuestions.forEach(
-      (currentQuestion, questionNumber) => {
-        const answers = [];
-  
-        // and for each available answer...
-        for(letter in currentQuestion.answers){
-  
-          // ...add an HTML radio button
-          answers.push(
-            `<label>
-              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
-              ${currentQuestion.answers[letter]}
-            </label>`
-          );
-        }
-  
-        // add this question and its answers to the output
-        output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
-        );
-      }
-    );
-  
-    // finally combine our output list into one string of HTML and put it on the page
-    quizContainer.innerHTML = output.join('');
+const quizData = [
+  {
+      question: "Who gave Harry the gillyweed in book 4?",
+      a: "Dobby",
+      b: "Professor Sprout",
+      c: "Neville Longbottom",
+      d: "Madeye Moody",
+      correct: "a",
+  },
+  {
+    question: "Who gave Hagrid the flying motorbike?",
+      a: "Hagrid made the motorbike himself",
+      b: "Professor Dumbledore",
+      c: "Sirus Black",
+      d: "Arthur Weasley",
+      correct: "c",
+  },
+  {
+    question: "How many goalposts are there in quidditch?",
+      a: "1",
+      b: "2",
+      c: "3",
+      d: "4",
+      correct: "c",
+  },
+  {
+    question: "Who did a member of the black family leave a horcrux with?",
+      a: "Bellatrix Lestrange",
+      b: "Kreacher",
+      c: "Professor Dumbledore",
+      d: "Lucius Malfoy",
+      correct: "a",
   }
+];
 
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
-    // the code we want to run for each question goes here
-  });
+const quiz = document.getElementById('quiz');
+const answerE1s = document.querySelectorAll('.answer');
+const questionE1 = document.getElementById('question');
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+const submitBtn = document.getElementById('submit');
 
-const myQuestions = [
-    {
-      question: "Who gave Harry the Gillyweed in book 4?",
-      answers: {
-        a: "Dobby",
-        b: "Neville Longbottom",
-        c: "Hermione Granger",
-        d: "Professor Sprout",
-      },
-        correctAnswer: "a",
-    },
-    {
-        question: "Who was given a horcrux by a Black?",
-        answers: {
-          a: "Kreacher",
-          b: "Bellatrix Lestrange",
-          c: "Mundungus Fletcher",
-          d: "Professor Dumbledore",
-        },
-        correctAnswer: "a"
-      },
-      {
-        question: "How many goal posts are in quidditch?",
-        answers: {
-          a: "1",
-          b: "2",
-          c: "3",
-          d: "4",
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "Who gave Hagrid his flying motorbike?",
-        answers: {
-          a: "Hagrid made it",
-          b: "Sirius Black",
-          c: "Arthur Weasley",
-          d: "Professor Dumbledore",
-        },
-        correctAnswer: "b"
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz()
+
+function loadQuiz() {
+  
+  deselectAnswers();
+
+  const currentQuizData = quizData[currentQuiz]; 
+
+  questionE1.innerHTML = currentQuizData.question;
+  a_text.innerHTML = currentQuizData.a
+  b_text.innerHTML = currentQuizData.b
+  c_text.innerHTML = currentQuizData.c
+  d_text.innerHTML = currentQuizData.d
+
+}
+
+function deselectAnswers() {
+answerE1s.forEach(answerE1 => answerE1.checked = false);
+}
+
+function getSelected() {
+    let answerE1s;
+    answerE1s.forEach(answerE1 => {
+      if (answerE1.checked) {
+        answer = answerE1.id
       }
-    ]
-
-    output.push(
-        `<div class="slide">
-          <div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join("")} </div>
-        </div>`
-      );
+    })
+    return answer;
+}
