@@ -1,47 +1,47 @@
+<!--Fantacy Design-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/9397952a5b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Harry Potter Fan Quiz</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Potter Quiz</title>
+  </head>
+  <body>
+    <h1><i class="fa-solid fa-wand-magic-sparkles"></i>Harry Potter Fan Quiz<i class="fa-solid fa-hat-wizard"></i></h1>
+
     <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-            <h1 id = "question" class="heading">Question Text 
-            </h1>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Answer</label>
-                </li>
+      <div class="quiz-header">
+        <h2 id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Question</label>
+          </li>
 
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label for="b" id="b_text">Answer</label>
-                </li>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Question</label>
+          </li>
 
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label for="c" id="c_text">Answer</label>
-                </li>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Question</label>
+          </li>
 
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label for="d" id="d_text">Answer</label>
-                </li>
-            </ul>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Question</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
     </div>
-    
-    <button id="submit">Submit</button>
-
-</div>
-   
-    
-    <script src="script.js"></script>
-
-</body>
+    <span class="count" id="count"></span>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

@@ -1,69 +1,170 @@
-* { 
-    box-sizing: border-box;
-    }
-    
-body {
-    background-color: whitesmoke;
-    background-image: linear-gradient(315deg), #b8b8b8 0% #f5f7f7 100%;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+* {
+  box-sizing: border-box;
 }
-    
+
+body {
+  background-image: url(../images/hp1.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-size: larger;
+  font-family: 'Schoolbell', cursive;
+  margin-left: 100px;
+}
+
+.quiz-container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  width: 600px;
+  overflow: hidden; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.quiz-header {
+  padding: 4rem;
+  background-color: #180346;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+  position: fixed;
+  margin-top: -650px;
+  color: #c2b7f7;
+  font-family: 'Schoolbell', cursive;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  color: #c2b7f7;
+}
+
+ul {
+  list-style-type: none;  
+  padding: 0;
+  text-align: center;
+  color: #c2b7f7;
+}
+
+ul li {
+  font-size: 25px;  
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  background-image: radial-gradient(circle, #6569be, #5859b8, #4b4ab1, #3e3aa9, #3129a1, #292096, #21168b, #170b80, #120970, #0d0760, #090551, #090042);  border: none
+  ;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 1.3rem;
+  font-weight: bold;
+  color: #b6b5d5;
+  border: 20px;
+}
+
+button:hover {
+  background-color: #732d91;
+}
+
+button:focus {
+  outline: none;
+  background-color: #5e3370;
+}
+
+.fa-solid, .fas {
+  font-weight: 900;
+  padding: 25px;
+}
+
+#count {
+  position: fixed;
+  padding-top: 650px; 
+}
+
+h3 {
+  color: antiquewhite;
+  text-align: center;
+  font-family: "Schoolbell", cursive;
+}
+
+/* --------- Media queries */
+
+@media (max-width: 844px) {
+  body {
+    width: fit-content;
+    margin: 0;
+  }
+
+  .quiz-container {
+    width: fit-content;
+  }
+
+  .quiz-header {
+    width: fit-content;
+  }
+
+  #count {
+    color: whitesmoke;
+  }
+
+  ul {
+    padding-left: 150px;
+  }
+
+  h1, h2, ul, label, button {
+    width: fit-content;
+    text-align: center;
+  }
+
+  }
+
+  @media (max-width: 390px) {
     .quiz-container {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
-        width: 600px;
-        overflow: hidden;
+      width: fit-content;
     }
-    
+  
     .quiz-header {
-        padding: 4rem;
+      width: fit-content;
     }
-    
+
     h1 {
-        padding: 1rem;
-        text-align: center;
-        margin: 0;
+      padding-bottom: 150px;
+      font-size: 21px;
+      padding-top: 100px;
     }
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    ul li {
-        font-size: 1.2rem;
-        margin: 1 rem 0;
-    }
-    
-    ul li label{
-        cursor: pointer;
-    }
-    
+
     button {
-        background-color: blue;
-        color: whitesmoke;
-        border: none;
-        display: block;
-        width: 100%;
-        cursor: pointer;
-        font-size: 1.1rem;
-        font-family: inherit;
-        padding: 1.3rem;
+      margin-left: 150px;
     }
-    
-    button:hover{
-        background-color: lightblue;
+
+    #count {
+      color: whitesmoke;
     }
-    
-    button:focus{
-        outline: none;
-        background-color: purple;
+  
+    h2, ul, label{
+      width: fit-content;
+      text-align: center;
     }
-    
+
+    body {
+      width: fit-content;
+      margin: 0;
+    }
+  
+  }
