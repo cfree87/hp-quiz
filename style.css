@@ -50,6 +50,7 @@ body {
   list-style: none;
   padding: 0;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .quiz__answers li {
@@ -83,7 +84,7 @@ body {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
-  background-color: #7C4DFF;
+  background-color: #f3df27;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -92,7 +93,7 @@ body {
 }
 
 .quiz__submit:hover {
-  background-color: #651FFF;
+  background-color: #f3df27;
 }
 
 /* Responsive styles */
