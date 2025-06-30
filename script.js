@@ -5,7 +5,7 @@ const quizData = [
       b: "Professor Sprout",
       c: "Neville Longbottom",
       d: "Madeye Moody",
-      correct: "d",
+      correct: "a",
   },
   {
     question: "Who gave Hagrid the flying motorbike?",
