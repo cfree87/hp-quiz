@@ -20,7 +20,7 @@
 ---
 
 ## 📸 Screenshots  
-![Harry Potter Quiz Screenshot](Assets/images/quiz.png)
+![Harry Potter Quiz Screenshot](assets/images/quiz.png)
 
 ---
 
