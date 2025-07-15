@@ -1,58 +1,89 @@
-Features
-
-Existing Features
-
-Main page
-        Includes a header section and body with a functional quiz based upon the Harry Potter book series. 
-
-Quiz
-        Fan quiz incldues 8 questions with 4 answers each. User can click their choice and follow by submitting their answer.
-
-Scorer
-        Score tracker will show user total score at end of the quiz.
-
-Timer
-        User has 80 seconds to complete quiz. If not completed the page will alert the user and give the option to reload the page.
 
 
-Testing
+# 🧙‍♂️ Harry Potter Quiz
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+> A fan-made Harry Potter-themed quiz built with HTML, CSS, and JavaScript. Test your knowledge across 8 multiple-choice questions against the clock!
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+---
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-Validator Testing
+## 🌐 Live Site  
+[Play the Harry Potter Quiz](https://cfree87.github.io/HP-Quiz/)
 
-    HTML
-        No errors were returned when passing through the official W3C validator
-    CSS
-        No errors were found when passing through the official (Jigsaw) validator
-    JS
-        No errors were found when passing through the official JSHint validator
+---
 
-Testing using mobile views in developer tools shows preferential layout. 
+## 🛠️ Built With  
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Git & GitHub  
 
-Unfixed Bugs
+---
 
-None
+## 📸 Screenshots  
+![Harry Potter Quiz Screenshot](Assets/images/quiz-screenshot.png)
 
+---
 
-Deployment
+## 📄 Features  
+- ✅ Interactive multiple-choice quiz  
+- ✅ Timer countdown (80 seconds)  
+- ✅ Score tracker displays results at the end  
+- ✅ Option to reload and try again  
+- ✅ Themed design inspired by the Harry Potter universe  
+- ✅ Mobile-friendly and responsive layout  
 
-  The site was deployed to GitHub pages. The steps to deploy are as follows:
-        In the GitHub repository, navigate to the Settings tab
-        From the source section drop-down menu, select the Master Branch
-        Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+---
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+## 🧪 Testing  
+- Tested across Chrome, Firefox, and Safari  
+- Verified on mobile and tablet screen sizes using browser developer tools  
+- All code validated with:  
+  - ✅ [W3C HTML Validator](https://validator.w3.org/) – No errors  
+  - ✅ [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) – No errors  
+  - ✅ [JSHint](https://jshint.com/) – No significant warnings  
 
-Credits
+---
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+## 🐛 Known Issues  
+- No known bugs or issues at this time  
 
+---
 
-Media
+## 🚀 How to Use  
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/csfree87/HP-Quiz.git
+   ```
 
-    The photos used on the home and sign up page are from https://wallpaper-house.com/group/harry-potter-background/index.php
-    
+2. Open `index.html` in your browser  
+   _or_  
+   Use a local development server (like Live Server in VS Code)  
+
+---
+
+## 📦 Deployment  
+This site is deployed using GitHub Pages.  
+[View Live](https://cfree87.github.io/HP-Quiz/)
+
+Steps:
+1. Push the main branch to GitHub  
+2. In your GitHub repo, go to **Settings > Pages**  
+3. Select the source as the root of the `main` branch  
+4. GitHub will deploy the site and provide a public URL
+
+---
+
+## 📸 Media Credits  
+- Background image sourced from [Wallpaper House - Harry Potter Collection](https://wallpaper-house.com/group/harry-potter-background/index.php)
+
+---
+
+## ✍️ Author  
+**Christopher Freeman**  
+📧 [FWDbyChristopher@gmail.com](mailto:FWDbyChristopher@gmail.com)  
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/christopher-freeman-05497322a/)
+
+---
+
+## 📘 License  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
