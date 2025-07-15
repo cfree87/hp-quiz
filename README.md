@@ -7,7 +7,7 @@
 ---
 
 ## 🌐 Live Site  
-[Play the Harry Potter Quiz](https://cfree87.github.io/HP-Quiz/)
+[Play the Harry Potter Quiz](https://cfree87.github.io/hp-quiz/)
 
 ---
 
@@ -20,7 +20,7 @@
 ---
 
 ## 📸 Screenshots  
-![Harry Potter Quiz Screenshot](Assets/images/quiz-screenshot.png)
+![Harry Potter Quiz Screenshot](Assets/images/quiz.png)
 
 ---
 
@@ -52,7 +52,7 @@
 ## 🚀 How to Use  
 1. Clone this repository:
    ```bash
-   git clone https://github.com/csfree87/HP-Quiz.git
+   git clone https://github.com/cfree87/HP-Quiz.git
    ```
 
 2. Open `index.html` in your browser  
