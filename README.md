@@ -61,10 +61,6 @@
 
 ---
 
-## 📦 Deployment  
-This site is deployed using GitHub Pages.  
-[View Live](https://cfree87.github.io/HP-Quiz/)
-
 Steps:
 1. Push the main branch to GitHub  
 2. In your GitHub repo, go to **Settings > Pages**  
